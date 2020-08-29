@@ -1,0 +1,47 @@
+.menu {
+    background-color: $black;
+    color: $white;
+    position: fixed;
+    top: 24px;
+    left: 32px;
+    padding: 15px 42px 40px;
+    border-radius: 24px;
+    box-shadow: 50px 50px 60px -23px rgba(12,11,11,0.7);
+}
+
+.menu__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 102px;
+    margin-bottom: 64px;
+}
+
+.menu__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+    
+    li {
+        padding-bottom: 64px;
+        
+        span {
+            font-size: 26px;
+        }
+        
+        &:last-child {
+            padding: 0;
+        }
+    }
+}
+
+.menu__exit {
+    display: flex;
+    justify-content: center;
+    
+    span {
+        font-size: 26px;
+    }
+}
