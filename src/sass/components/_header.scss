@@ -2,6 +2,7 @@
     background-color: $gray;
     border-radius: 14px;
     position: relative;
+    margin-bottom: 24px;
 
     &::after {
         content: url(../src/img/guy.png);

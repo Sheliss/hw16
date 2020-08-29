@@ -25,6 +25,8 @@ body {
 
 .main__left {
   width: 550px;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu {
@@ -75,6 +77,7 @@ body {
   background-color: #F5F5F7;
   border-radius: 14px;
   position: relative;
+  margin-bottom: 24px;
 }
 .header::after {
   content: url(../src/img/guy.png);
@@ -96,4 +99,76 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
+}
+
+.course {
+  display: flex;
+}
+
+.course__info {
+  background-color: #F5F5F7;
+  display: flex;
+  border-radius: 14px;
+}
+
+.course__inner {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px 8px 8px;
+}
+
+.course__img {
+  margin-right: 24px;
+}
+.course__img img {
+  display: block;
+}
+
+.course__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.course__title {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.course__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.course__progress {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  position: relative;
+  margin-right: 40px;
+}
+.course__progress::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0C0B0B;
+  box-sizing: border-box;
+  border-radius: 50%;
+  top: -12px;
+  left: -8px;
+}
+
+.course__btn {
+  padding: 12px 30px;
+  border-radius: 8px;
+  background-color: #0C0B0B;
+  color: #ffffff;
+  border: 2px solid #0C0B0B;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
 }
