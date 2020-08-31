@@ -103,6 +103,8 @@ body {
 
 .course {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .course__info {
@@ -114,7 +116,7 @@ body {
 .course__inner {
   display: flex;
   align-items: center;
-  padding: 8px 24px 8px 8px;
+  padding: 8px;
 }
 
 .course__img {
@@ -171,4 +173,107 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   line-height: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.course__arrows {
+  display: flex;
+  align-items: center;
+}
+.course__arrows span {
+  font-size: 40px;
+}
+.course__arrows--left {
+  transform: rotate(-90deg);
+}
+.course__arrows--right {
+  transform: rotate(90deg);
+}
+
+.courses-list__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+
+.courses-list__nav.list-nav {
+  margin-bottom: 10px;
+}
+.courses-list__nav.list-nav ul {
+  display: flex;
+}
+.courses-list__nav.list-nav .list-nav__item, .courses-list__nav.list-nav .list-nav__item--active {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  opacity: 0.3;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.courses-list__nav.list-nav .list-nav__item--active {
+  opacity: 1;
+}
+.courses-list__nav.list-nav .list-nav__item:last-child, .courses-list__nav.list-nav .list-nav__item--active:last-child {
+  padding: 0;
+}
+
+.item-container__item.item {
+  background-color: #F5F5F7;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.item-container__item.item:last-child {
+  margin-bottom: 0;
+}
+.item-container__item.item .item__img img {
+  display: block;
+}
+.item-container__item.item .item__name {
+  width: 150px;
+}
+.item-container__item.item .item__title {
+  color: #0C0B0B;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+.item-container__item.item .item__subtitle, .item-container__item.item .item__rating, .item-container__item.item .item__lenght {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+.item-container__item.item .item__lenght {
+  display: flex;
+}
+.item-container__item.item .item__lenght span {
+  font-size: 16px;
+  padding-right: 8px;
+}
+.item-container__item.item .item__lenght p {
+  width: 65px;
+}
+.item-container__item.item .item__rating span {
+  font-size: 16px;
+  padding-right: 8px;
+}
+.item-container__item.item .item__btn {
+  padding: 12px 30px;
+  border-radius: 8px;
+  background-color: #0C0B0B;
+  color: #ffffff;
+  border: 2px solid #0C0B0B;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #0C0B0B;
+  background-color: transparent;
+  padding: 12px 24px;
 }
