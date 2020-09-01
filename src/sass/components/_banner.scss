@@ -1,0 +1,32 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: $gray;
+    border-radius: 14px;
+    padding: 24px 48px 15px 23px;
+}
+
+.banner__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: $black;
+}
+
+.banner__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.banner__btn {
+    @include black__btn;
+}
+
+.banner__img {
+
+    img {
+        display: block;
+    }
+}

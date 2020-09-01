@@ -19,12 +19,19 @@
  }
 
 .main {
-    margin: 55px 80px 0px 200px;
+    margin: 55px 10px 0px 180px;
     display: flex;
+    justify-content: space-between;
 }
 
 .main__left {
     width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__right {
+    width: 450px;
     display: flex;
     flex-direction: column;
 }
